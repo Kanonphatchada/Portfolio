@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+.portfolio-container {
+  font-family: 'Arial', sans-serif;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, color 0.3s;
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Day Mode */
+.day-mode {
+  background-color: #fdf0e3; /* พื้นหลังพาสเทลอ่อน */
+  color: #5a5a5a;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Night Mode */
+.night-mode {
+  background-color: #1a1a1a; /* พื้นหลังมืด */
+  color: #e0e0e0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* ปุ่มเปลี่ยนโหมดมุมขวาบน */
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #ffd1dc;
+  color: #333;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.theme-toggle:hover {
+  background-color: #ffb7b2;
+}
+
+.portfolio-nav {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+/* ปุ่มหมวดหมู่ */
+.btn-outline-primary {
+  color: #ff9aa2;
+  border: 1px solid #ff9aa2;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-outline-primary:hover {
+  background-color: #ffb7b2;
   color: white;
+  border-color: #ffb7b2;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-size: 24px;
+  color: inherit;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2 {
+  font-size: 20px;
+  color: inherit;
+  margin-top: 20px;
+}
+
+.profile-pic {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #ffb7b2;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  color: inherit;
+}
+
+li {
+  padding: 5px 0;
+}
+
+p {
+  color: inherit;
+}
+
+/* ระยะห่างระหว่าง sections */
+section {
+  padding: 15px 0;
 }

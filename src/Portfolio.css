@@ -1,0 +1,133 @@
+/* นำเข้า Google Fonts - Noto Sans Thai */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;700&display=swap');
+
+
+/* โหมดกลางวัน */
+.day-mode {
+    font-family: 'Noto Sans Thai', sans-serif;
+    background-color: #fff4e6;
+    color: #5a5a5a;
+  }
+  
+  /* โหมดกลางคืน */
+  .night-mode {
+    font-family: 'Noto Sans Thai', sans-serif;
+    background-color: #2c2c2c;
+    color: #ffffff;
+  }
+  
+  /* ปุ่ม Toggle Switch */
+  .toggle-switch {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .toggle-switch .toggle-knob {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    transition: transform 0.3s;
+  }
+  
+  .toggle-knob.day {
+    transform: translateX(0);
+    background-color: #ffd1dc; /* สีสำหรับโหมดกลางวัน */
+  }
+  
+  .toggle-knob.night {
+    transform: translateX(30px);
+    background-color: #333; /* สีสำหรับโหมดกลางคืน */
+  }
+  
+  /* เมนูเลื่อน */
+  .nav-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+  
+  .nav-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffb7b2;
+    color: #333;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-button:hover {
+    background-color: #ff9aa2;
+  }
+  
+  /* ส่วนข้อมูล */
+  .portfolio-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 15px;
+    position: relative;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* รูปโปรไฟล์ */
+  .profile {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #ffb7b2;
+    margin-bottom: 10px;
+  }
+  
+  h1 {
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-size: 24px;
+    color: #d4745e;
+  }
+  
+  /* ส่วนต่าง ๆ */
+  .section {
+    background-color: #ffe3e3;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .night-mode .section {
+    background-color: #444444;
+  }
+  
+  .personal-info ul, .skills ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    padding: 5px 0;
+  }
+  
+  /* ข้อมูลติดต่อ */
+  .contact-info p, .education p {
+    margin: 5px 0;
+  }
+  
